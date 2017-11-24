@@ -1,0 +1,4 @@
+rootProject.name = 'Test'
+include 'modules:tool.ReadXMLTool'
+findProject(':modules:tool.ReadXMLTool')?.name = 'test'
+
