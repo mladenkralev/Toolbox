@@ -3,19 +3,33 @@ package toolbox.project.core;
 import toolbox.project.interfaces.ICommit;
 import toolbox.project.interfaces.IJenkinsRunnable;
 
+import java.io.File;
+import java.util.List;
+
 /**
  * Created by mlkr on 01/12/2017.
  */
+// TODO NP checking and validation
 public class Project implements ICommit, IJenkinsRunnable {
     private String name;
     private String url;
     private int numberOfProject;
     private String nextProject;
+    private Boolean autoIncrement;
+    private List<File> filesToIncrement;
 
-    public Project(String name, String url, int numberOfProject) {
+    public Project(String name, String url, Boolean autoIncrement, List<File> filesToIncrement, int numberOfProject) {
         this.name = name;
         this.url = url;
-        this.nextProject = nextProject;
+        this.autoIncrement = autoIncrement;
+        this.numberOfProject = numberOfProject;
+    }
+
+    public Project(String name, String url, Boolean autoIncrement, int numberOfProject) {
+        this.name = name;
+        this.url = url;
+        this.autoIncrement = autoIncrement;
+        this.numberOfProject = numberOfProject;
     }
 
     public void increaseVersion() {
@@ -36,7 +50,8 @@ public class Project implements ICommit, IJenkinsRunnable {
                 "name='" + name + '\'' +
                 ", url='" + url + '\'' +
                 ", numberOfProject=" + numberOfProject +
-                ", nextProject=" + nextProject +
+                ", nextProject='" + nextProject + '\'' +
+                ", autoIncrement=" + autoIncrement +
                 '}';
     }
 
