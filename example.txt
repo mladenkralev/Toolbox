@@ -1,19 +1,158 @@
+root.path=C:\\test\\checkout-local-externals
+
 project.name.0=axiom
 project.url.0=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
-project.auto.increment.0=true
-project.next.0=neethi
+project.auto.increment.0=false
+project.increase.value.files.0=axiom/modules/axiom-all/pom.xml,\
+                               axiom/modules/axiom-api/pom.xml,\
+                               axiom/modules/axiom-buildutils/pom.xml,\
+                               axiom/modules/axiom-c14n/pom.xml,\
+                               axiom/modules/axiom-common-impl/pom.xml,\
+                               axiom/modules/axiom-common-impl-testsuite/pom.xml,\
+                               axiom/modules/axiom-dom/pom.xml,\
+                               axiom/modules/axiom-dom-testsuite/pom.xml,\
+                               axiom/modules/axiom-impl/pom.xml,\
+                               axiom/modules/axiom-integration/pom.xml,\
+                               axiom/modules/axiom-jaxen-testsuite/pom.xml,\
+                               axiom/modules/axiom-osgi-tests/pom.xml,\
+                               axiom/modules/axiom-parent/pom.xml,\
+                               axiom/modules/axiom-samples/pom.xml,\
+                               axiom/modules/axiom-tests/pom.xml,\
+                               axiom/modules/axiom-testsuite/pom.xml,\
+                               axiom/modules/axiom-testutils/pom.xml,\
+                               axiom/pom.xml
 
-project.name.1=neethi
+project.regex.0=<groupId>com.softwareag.ext.org.apache.ws.commons.axiom</groupId>,\
+                <artifactId>axiom-parent</artifactId>,\
+                <version>1.2.13.9-v0007</version>,
+project.next.0=jettison
+
+
+project.name.1=jettison
 project.url.1=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
-project.auto.increment.1=false
-project.increase.value.files.1=a.txt,b.txt
-project.increase.regex.1=
-project.next.1=axis2
+project.auto.increment.1=true
+project.next.1=neethi
 
-project.name.2=axis2
+project.name.2=neethi
 project.url.2=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
-project.type.2=maven
-project.auto.increment.2=false
-project.increase.value.files.2=a.txt,b.txt
-project.increase.regex.2=
-project.next.2=
+project.auto.increment.2=true
+project.next.2=wsdl4j
+
+project.name.3=wsdl4j
+project.url.3=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.3=true
+project.next.3=xmlsec-1.5.6
+
+project.name.4=xmlsec-1.5.6
+project.url.4=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.4=true
+project.next.4=wss4j
+
+project.name.5=wss4j
+project.url.5=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.5=true
+project.next.5=axis2
+
+project.name.6=axis2
+project.url.6=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.6=false
+project.increase.value.files.6=axis2/modules/adb/pom.xml,\
+                               axis2/modules/adb-codegen/pom.xml,\
+                               axis2/modules/addressing/pom.xml,\
+                               axis2/modules/clustering/pom.xml,\
+                               axis2/modules/codegen/pom.xml,\
+                               axis2/modules/corba/pom.xml,\
+                               axis2/modules/distribution/pom.xml,\
+                               axis2/modules/fastinfoset/pom.xml,\
+                               axis2/modules/integration/pom.xml,\
+                               axis2/modules/java2wsdl/pom.xml,\
+                               axis2/modules/jaxbri/pom.xml,\
+                               axis2/modules/jaxws/pom.xml,\
+                               axis2/modules/jaxws-integration/pom.xml,\
+                               axis2/modules/jaxws-mar/pom.xml,\
+                               axis2/modules/jibx/pom.xml,\
+                               axis2/modules/json/pom.xml,\
+                               axis2/modules/kernel/pom.xml,\
+                               axis2/modules/metadata/pom.xml,\
+                               axis2/modules/mex/pom.xml,\
+                               axis2/modules/mtompolicy/pom.xml,\
+                               axis2/modules/mtompolicy-mar/pom.xml,\
+                               axis2/modules/osgi/pom.xml,\
+                               axis2/modules/parent/pom.xml,\
+                               axis2/modules/ping/pom.xml,\
+                               axis2/modules/resource-bundle/pom.xml,\
+                               axis2/modules/saaj/pom.xml,\
+                               axis2/modules/samples/java_first_jaxws/pom.xml,\
+                               axis2/modules/samples/jaxws-addressbook/pom.xml,\
+                               axis2/modules/samples/jaxws-calculator/pom.xml,\
+                               axis2/modules/samples/jaxws-interop/pom.xml,\
+                               axis2/modules/samples/jaxws-samples/pom.xml,\
+                               axis2/modules/samples/jaxws-version/pom.xml,\
+                               axis2/modules/samples/version/pom.xml,\
+                               axis2/modules/scripting/pom.xml,\
+                               axis2/modules/soapmonitor/module/pom.xml,\
+                               axis2/modules/soapmonitor/servlet/pom.xml,\
+                               axis2/modules/spring/pom.xml,\
+                               axis2/modules/testutils/pom.xml,\
+                               axis2/modules/tool/axis2-aar-maven-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-ant-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-eclipse-codegen-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-eclipse-service-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-idea-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-java2wsdl-maven-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-mar-maven-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-repo-maven-plugin/pom.xml,\
+                               axis2/modules/tool/axis2-wsdl2code-maven-plugin/pom.xml,\
+                               axis2/modules/transport/http/pom.xml,\
+                               axis2/modules/transport/local/pom.xml,\
+                               axis2/modules/webapp/pom.xml,\
+                               axis2/modules/xmlbeans/pom.xml,\
+                               axis2/pom.xml,
+project.regex.6=<groupId>com.softwareag.org.apache.axis2</groupId>,\
+        <artifactId>axis2-parent</artifactId>,\
+        <version>1.6.2.11-v0005</version>
+project.next.6=rampart
+
+project.name.7=rampart
+project.url.7=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.7=false
+project.increase.value.files.7=rampart/modules/distribution/pom.xml,\
+                               rampart/modules/documentation/pom.xml,\
+                               rampart/modules/rampart-core/pom.xml,\
+                               rampart/modules/rampart-integration/pom.xml,\
+                               rampart/modules/rampart-mar/pom.xml,\
+                               rampart/modules/rampart-policy/pom.xml,\
+                               rampart/modules/rampart-samples/pom.xml,\
+                               rampart/modules/rampart-tests/pom.xml,\
+                               rampart/modules/rampart-trust/pom.xml,\
+                               rampart/modules/rampart-trust-mar/pom.xml,\
+                               rampart/pom.xml,
+
+project.regex.7=<groupId>com.softwareag.ext.rampart</groupId>,\
+                <artifactId>rampart-project</artifactId>,\
+                <version>1.6.2.11-v0007</version>,
+project.next.7=sandesha
+
+project.name.8=sandesha
+project.url.8=https://stackoverflow.com/questions/23510375/read-properties-file-in-java-having-particular-string
+project.auto.increment.8=false
+project.increase.value.files.8=sandesha2/modules/client/pom.xml,\
+                               sandesha2/modules/core/pom.xml,\
+                               sandesha2/modules/distribution/pom.xml,\
+                               sandesha2/modules/interop/pom.xml,\
+                               sandesha2/modules/mar/pom.xml,\
+                               sandesha2/modules/persistence/pom.xml,\
+                               sandesha2/modules/policy/pom.xml,\
+                               sandesha2/modules/rampart-integration/pom.xml,\
+                               sandesha2/modules/resource-bundle/pom.xml,\
+                               sandesha2/modules/samples/pom.xml,\
+                               sandesha2/modules/tests/pom.xml,\
+                               sandesha2/pom.xml
+project.regex.8=<groupId>com.softwareag.ext.sandesha2</groupId>,\
+                <artifactId>sandesha2-parent</artifactId>,\
+                <version>1.6.2.11-v0010</version>,
+project.next.8=
+
+
+
+

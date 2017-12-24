@@ -1,9 +1,13 @@
 import exceptions.ReadXMLTestException;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Properties;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -15,51 +19,11 @@ import java.util.stream.Stream;
 public class ReadXMLTests {
     private static Pattern p = Pattern.compile("tests=\"(\\d+)\"");
 
-    public static void main(String[] args) throws ReadXMLTestException {
-        if (args.length == 1) {
-
-            for (String argument : args) {
-                System.out.println("Arguments passed " + argument);
-            }
-
-            final InnerSummingClass a = new InnerSummingClass();
-
-            try (Stream<Path> paths = Files.walk(Paths.get(args[0]))) {
-                paths.filter(Files::isRegularFile).forEach(file -> {
-                    Scanner s = null;
-                    try {
-                        s = new Scanner(file);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                    String nextMatch = s.findWithinHorizon(p, 0);
-                    if (nextMatch == null) {
-                        throw new IllegalArgumentException("In the dir that is provided, no match was found!");
-                    }
-
-                    System.out.println(String.format("\nFile: %s regex found: %s", file.toAbsolutePath(), nextMatch));
-
-                    Matcher matcher = p.matcher(nextMatch);
-                    boolean find = matcher.find();
-                    String number = matcher.group(1);
-
-                    int temp = Integer.parseInt(number);
-
-                    System.out.println(String.format("%s + %s =", a.number, temp));
-
-                    a.number += Integer.parseInt(number);
-
-                    System.out.print(a.number);
-                });
-            } catch (IOException e) {
-                new ReadXMLTestException("Canno't oppen stream to " + Paths.get(args[0]));
-            }
-
-            System.out.println("\nEverything is: " + a.number);
-        } else {
-            System.out.println("Directory argument is not supplied");
-        }
+    public static void main(String[] args) throws ReadXMLTestException, IOException {
+        Path filePath = Paths.get("C:\\test\\toolbox\\ssss.txt");
+        File file = new File(filePath.toAbsolutePath().toString());
+        if(!file.exists())
+        System.out.println(file);
     }
 
     static class InnerSummingClass {

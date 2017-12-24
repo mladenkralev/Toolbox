@@ -5,6 +5,7 @@ import toolbox.project.interfaces.IJenkinsRunnable;
 
 import java.io.File;
 import java.util.List;
+import java.util.regex.Matcher;
 
 /**
  * Created by mlkr on 01/12/2017.
@@ -17,12 +18,14 @@ public class Project implements ICommit, IJenkinsRunnable {
     private String nextProject;
     private Boolean autoIncrement;
     private List<File> filesToIncrement;
+    private String regex;
 
-    public Project(String name, String url, Boolean autoIncrement, List<File> filesToIncrement, int numberOfProject) {
+    public Project(String name, String url, Boolean autoIncrement, List<File> filesToIncrement, String regex, int numberOfProject) {
         this.name = name;
         this.url = url;
         this.autoIncrement = autoIncrement;
         this.numberOfProject = numberOfProject;
+        this.regex = regex;
     }
 
     public Project(String name, String url, Boolean autoIncrement, int numberOfProject) {
